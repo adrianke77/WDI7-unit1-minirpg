@@ -1,0 +1,50 @@
+
+html,body {
+  box-sizing : border-box;
+  height     : 100%;
+  width      : 100%;
+  margin     : 0;
+  padding    : 0;
+}
+body{
+  display        : flex;
+  height         : 100%;
+  width          : 100%;
+  flex-direction : column;
+}
+.gameBoard {
+  position        : relative;
+  display         : flex;
+  height          : 100%;
+  width           : 100%;
+  margin-top      : 10%;
+  margin-left     : 10%;
+  justify-content : center;
+  align-items     : center;
+}
+.box {
+  position : absolute;
+  height   : 34.6px;
+  width    : 30px;
+  background-position: 0px 0px !important;
+}
+.spritesheet {
+  background : url('./bgtiles/landhextiles.png') no-repeat;
+  background-size: 340% 286%;
+}
+
+/* sprite calculations:
+original spritesheet dimensions:
+500 px wide
+475 px tall
+
+box size:
+30px wide
+Ratio of height to width = 1/0.866
+-> height = 34.64px
+
+background resizing:
+original width 150px
+new width 30px
+width resize = 500%
+ */
