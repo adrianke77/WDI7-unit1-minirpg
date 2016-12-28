@@ -19,18 +19,12 @@ GameSys.prototype.initNumbSeedFromString = function( string ) {
 }
 
 //testing stuff
-var worldBoard = new WorldBoard( 30, 20 );
+var worldBoard = new WorldBoard( 20, 20 );
 var gameSys = new GameSys()
 worldBoard.makeBlankBoardHtml();
-// worldBoard.landTiles =
-//   [
-//     [ "plain", "swamp", "hill", "water" ],
-//     [ "water", "mountain", "snow", "swamp" ],
-//     [ "forest", "dune", "plain", "hill" ],
-//     [ "water", "mountain", "snow", "forest" ]
-//   ]
-
-gameSys.initNumbSeedFromString( "Blackworld" )
+gameSys.initNumbSeedFromString("Jeremiah" )
 console.log( numbSeed )
 worldBoard.randomizeTerrain()
 worldBoard.drawTerrain()
+worldBoard.randomizeCreatures()
+worldBoard.drawCreatures()

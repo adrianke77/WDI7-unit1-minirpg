@@ -21,7 +21,7 @@ body{
   margin-top  : 50px;
   margin-left : 30px;
 }
-.box {
+.landbox {
   position : absolute;
   height   : 34.6px;
   width    : 30px;
@@ -37,9 +37,23 @@ body{
   0 -66px
   */
 }
-.spritesheet {
-  background      : url('./bgtiles/landhextiles.png') no-repeat;
+.background {
+  background      : url('./art/landhextiles-modded.png') no-repeat;
   background-size : 340% 286%;
   z-index : -10;
 }
 
+.creature {
+  background : url('./art/creatures-modded.png');
+  background-size: 900% 700%;
+}
+
+.creatbox {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 7.3px;
+  margin-bottom: 7.3px;
+}
