@@ -21,24 +21,9 @@ body{
   margin-top  : 50px;
   margin-left : 30px;
 }
-.landbox {
-  position : absolute;
-  height   : 34.6px;
-  width    : 30px;
-  /*
-  sample tile selecting  
-  background-position : -72px -64px !important; 
 
-  move one sprite to right: 
-  -36px
-  move one sprite down and to right: 
-  -18px -33 px
-  move two sprites down (bottom row):
-  0 -66px
-  */
-}
 .background {
-  background      : url('./art/landhextiles-modded.png') no-repeat;
+  background      : url('./art/landhextiles-modded2.png') no-repeat;
   background-size : 340% 286%;
   z-index : -10;
 }
@@ -56,4 +41,30 @@ body{
   margin-right: 5px;
   margin-top: 7.3px;
   margin-bottom: 7.3px;
+}
+.landbox {
+  position : absolute;
+  height   : 34.6px;
+  width    : 30px;
+  /*
+  sample tile selecting  
+  background-position : -72px -64px !important; 
+
+  move one sprite to right: 
+  -36px
+  move one sprite down and to right: 
+  -18px -33 px
+  move two sprites down (bottom row):
+  0 -66px
+  */
+}
+.fogbox {
+  position : absolute;
+  height   : 34.6px;
+  width    : 30px;
+}
+
+.fog {
+  background      : url('./art/landhextiles-modded.png') no-repeat;
+  background-size : 340% 286%;
 }
